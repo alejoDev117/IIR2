@@ -33,8 +33,8 @@ speedY2 = 0
 #pelota
 cordPeloX = 350
 cordPeloY = 250
-speedPX = 3
-speedPY = 3
+speedPX = 5
+speedPY = 5
 #contadores
 conPlayer = 0
 conEnemi = 0
