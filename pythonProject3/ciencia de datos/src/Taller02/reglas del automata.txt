@@ -1,0 +1,33 @@
+
+Para mi automata voy a definir la reglas de la siguiente manera.
+DEPARTAMENTO MUNICIPIO TIPO_VIA NUMERO_VIA_PRINCIPAL (LETRA) # NUMERO_VIA_SECUNDARIA-NUMERO_EDIFICACION
+
+Primero debe ir el departamento, En este caso por efectos de optimización cada departamento será abreviado con tres letras:
+[AMA, ANT, ARA, ATL, BOL, BOY, CAL, CAQ, CAS, CAU, CES, CHO, COR, CUN, GUA, GUV, HUI, LGU, MAG, MET, NAR, NSA, PUT, QUI, RIS, SAP, SAN, SUC, TOL, VAC, VAU, VIC]
+
+Segundo para los municipios,ciudades,localidades o corregimientos será igual, ejemplo:
+[Abejorral (ABE), Alejandría (ALE), Argelia (ARG), El Carmen de Viboral (CAR), Cocorná (COC), Concepción (CON), El Peñol (PEÑ), El Retiro (RET), El Santuario (SAN), Granada (GRA), Guarne (GUA), Guatapé (GUE), La Ceja (CEJ), La Unión (UNI), Marinilla (MAR), Nariño (NAR), Rionegro (RIO), San Carlos (SCA), San Francisco (SFR), San Luis (SLU), San Rafael (SRA), San Vicente (SVI), Sonsón (SON)
+
+
+Ahora lo que siguie es el tipo de calle, la cual me voy a basar lo la lista brindada de mercado libre:
+[CLL, CRA, AVE, TRA, DIA, CIR, AUT, PSJ, VIA]
+
+
+Lo que siguie es el numero de dicho tipo de calle ejemplo:
+[CLL 10, CLL 45, CLL 150, CRA 7, CRA 50, CRA 80, AVE 19, AVE 68, AVE 1E, TRA 23, TRA 54, TRA 93, DIA 25, DIA 45B, DIA 72, CIR 1, CIR 2A, CIR 4, AUT 115, AUT 50, AUT 22, PSJ 3, PSJ 8A, PSJ 10, VIA 1, VIA 3B, VIA 5]
+
+lo que sigue es la letra que acompaña al numero principal, por efectos de que varia segun la cuidad se dejará todo el alfabeto
+[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z]
+
+sigue el numeral 
+#
+luego el numero de via secundaria
+
+guion
+-
+numero de edificio
+
+Los espacios serán °
+
+NombreDepartamento(3letras),NombreCiudad(3letras),Nombre°de°barrio/vereda°TipoCalle.°999[a-z](max2)#999-999.
+NombreDepartamento(3letras),NombreCiudad(3letras),Nombre°de°barrio/vereda-finca#999.
